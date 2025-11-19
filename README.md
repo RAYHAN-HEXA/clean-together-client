@@ -1,16 +1,53 @@
-# React + Vite
+# Community Cleanliness & Issue Reporting Portal (Client)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based platform that allows users to report, track, and contribute to solutions for real-world community cleanliness issues. The application focuses on clean UI, protected routes, and a seamless user experience across all devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Link
+**Client Live URL:** https://your-client-live-link  
+**Server Repo:** https://your-server-repo-link  
 
-## React Compiler
+(Replace with your actual deployed URLs)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Overview
+The Community Cleanliness & Issue Reporting Portal enables citizens to report different public issues such as garbage buildup, broken public property, illegal construction, road damage, and more.  
+Users can:
+- Submit new issues  
+- View all issues and apply filters  
+- Contribute financially to cleanup efforts  
+- Track their submitted issues  
+- Access personal contribution history  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This frontend is built using **React**, **Tailwind CSS**, and **Firebase Authentication**, ensuring a fast, secure, and user-friendly experience.
+
+---
+
+## ✨ Features
+- 🔐 **Firebase Authentication** (Email/Password + Google Login)
+- 🛡️ **Protected Routes** with persistent login on refresh
+- 📝 **Add / Update / Delete Issues** (CRUD)
+- 🔍 **View All Issues** with category & status filtering
+- 💳 **Pay Contribution Modal** for cleanup support
+- 📄 **PDF Download** for user contributions (jsPDF + AutoTable)
+- 🌗 **Dark/Light Mode Toggle**
+- 📊 **Community Stats & Recent Complaints** section
+- 🚫 **404 Not Found Page** for invalid routes
+- 🔄 **Loading Spinner** during API calls
+- 🔔 **Toast/SweetAlert notifications** for all actions
+- 📱 **Fully responsive design** for mobile, tablet, and desktop
+
+---
+
+## 🧱 Tech Stack
+**Client Technologies**
+- React.js (SPA)
+- React Router DOM
+- Tailwind CSS
+- Firebase Authentication
+- Axios (optional interceptors)
+- SweetAlert2 / React Hot Toast
+- jsPDF & jsPDF-AutoTable
+- Lottie React / Typewriter / Awesome Reveal (one used in homepage)
