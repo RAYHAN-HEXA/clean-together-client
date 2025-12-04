@@ -69,14 +69,41 @@ const Login = () => {
       });
       navigate(from, { replace: true });
     } catch (error) {
+      console.error("Sign in google error:", error);
+      let errorMessage = "Failed to sign in with Google";
+
+      switch (error.code) {
+        case "auth/popup-blocked":
+          errorMessage = "Popup was blocked by browser. Please allow popups and try again.";
+          break;
+        case "auth/popup-closed-by-user":
+          errorMessage = "Sign-in was cancelled.";
+          break;
+        case "auth/cancelled-popup-request":
+          errorMessage = "Sign-in was cancelled.";
+          break;
+        case "auth/invalid-api-key":
+          errorMessage = "Invalid API key. Please check your Firebase configuration.";
+          break;
+        case "auth/operation-not-allowed":
+          errorMessage = "Google sign-in is not enabled. Please enable it in Firebase console.";
+          break;
+        case "auth/web-storage-unsupported":
+          errorMessage = "Web storage is not supported or disabled. Please enable cookies.";
+          break;
+        case "auth/invalid-app-credential":
+          errorMessage = "Invalid app credentials. Please check your Firebase configuration.";
+          break;
+        default:
+          errorMessage = `Sign-in failed: ${error.message}`;
+      }
+
       Swal.fire({
         position: "top-center",
         icon: "error",
-        title: "Failed To Google Login",
-        showConfirmButton: false,
-        timer: 1200,
+        title: errorMessage,
+        showConfirmButton: true,
       });
-      console.error("Sign in google error:", error);
     }
   };
 
