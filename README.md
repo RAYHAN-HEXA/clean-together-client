@@ -5,10 +5,10 @@ A modern React-based platform that allows users to report, track, and contribute
 ---
 
 ## 🔗 Live Link
-**Client Live URL:** https://your-client-live-link  
-**Server Repo:** https://your-server-repo-link  
+**Client Live URL: https://clean-together-community.netlify.app/
+**Server Repo: https://clean-together-community.netlify.app/
 
-(Replace with your actual deployed URLs)
+
 
 ---
 
