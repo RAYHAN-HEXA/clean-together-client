@@ -77,16 +77,18 @@ const Navbar = () => {
             Home
           </NavLink>
 
-          <NavLink
-            to="/issues"
-            className={({ isActive }) =>
-              `text-base font-medium hover:text-primary/75 ${
-                isActive ? "text-primary" : "text-base-content"
-              }`
-            }
-          >
-            All Issues
-          </NavLink>
+       <NavLink
+  to="/issues"
+  aria-current="page"
+  className={({ isActive }) =>
+    `text-base font-medium hover:text-primary/75 ${
+      isActive ? "text-primary" : "text-base-content"
+    }`
+  }
+>
+  All Issues
+</NavLink>
+
 
           {user && (
             <>
