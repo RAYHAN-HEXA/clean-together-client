@@ -7,7 +7,7 @@ import useAuth from "./useAuth";
 const instance = axios.create({
   baseURL:
     import.meta.env.VITE_API_BASE_URL ||
-    "https://cleantogether-taupe.vercel.app",
+    "https://cleantogether-taupe.vercel.app/",
 });
 const useAxiosSecure = () => {
   const { user, signOutUser } = useAuth();

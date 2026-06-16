@@ -5,10 +5,9 @@ A modern React-based platform that allows users to report, track, and contribute
 ---
 
 ## 🔗 Live Link
-**Client Live URL: https://clean-together-community.netlify.app/
-**Server Repo: https://clean-together-community.netlify.app/
-
-
+**Client Live URL:** https://clean-together-client.vercel.app/  
+**Server Live URL:** https://cleantogether-taupe.vercel.app/  
+**Server Repo:** https://github.com/RAYHAN-HEXA/CleanTogether.git
 
 ---
 
