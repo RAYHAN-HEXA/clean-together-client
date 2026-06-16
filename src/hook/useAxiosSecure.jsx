@@ -25,7 +25,7 @@ const useAxiosSecure = () => {
       },
       (err) => {
         console.log(err);
-        const status = err.status;
+        const status = err.response?.status;
         if (status === 401 || status === 403) {
           Swal.fire({
             position: "top-center",
@@ -40,6 +40,7 @@ const useAxiosSecure = () => {
             })
             .catch((err) => console.log(err));
         }
+        return Promise.reject(err);
       }
     );
     return () => {
