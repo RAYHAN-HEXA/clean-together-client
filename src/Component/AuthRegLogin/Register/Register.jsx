@@ -79,8 +79,7 @@ const Register = () => {
   // Sign In Google
   const signWithGoogle = () => {
     signInGoogle()
-      .then((result) => {
-        const user = result.user;
+      .then(() => {
         Swal.fire({
           position: "top-center",
           icon: "success",

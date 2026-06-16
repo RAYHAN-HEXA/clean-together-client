@@ -8,10 +8,7 @@ const AllissuesDetails = ({ issue }) => {
     location,
     description,
     image,
-    amount,
-    email,
     date,
-    status,
   } = issue;
 
   const suggestedBudget = 500; // Example budget
